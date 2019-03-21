@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="icon">
+        <img alt="leagueicon" src="assets/images/logo.png">
+    </div>
+    <h1>Trivia Game!</h1>
+    <div id="loading">
+        <button type="button" id="start" class="btn btn-primary btn-lg btn-block">Start</button>
+    </div>
+    <div id="content">
+        <h2 id="timer"></h2>
+        <div id="question1" class="form-check form-check-inline">
+            <span>Which of these champions has the most recent rework?</span>
+        </div>
+        <div id="answers1" class="answers">
+            <input class="form-check-input" name="q1" type="radio" id="q1a1" value="option1">
+            <label class="form-check-label" for="q1a1">Ahri</label>
+            <input class="form-check-input" name="q1" type="radio" id="q1a2" value="option2">
+            <label class="form-check-label" for="q1a2">Graves</label>
+            <input class="form-check-input" name="q1" type="radio" id="q1a3" value="option3">
+            <label class="form-check-label" for="q1a3">Fizz</label>
+            <input class="form-check-input" name="q1" type="radio" id="q1a4" value="option3">
+            <label class="form-check-label" for="q1a4">Kayle</label>
+        </div>
+        <div id="question2" class="form-check form-check-inline">
+            <span>What is the cost for a B.F. sword?</span>
+        </div>
+        <div id="answers2" class="answers">
+            <input class="form-check-input" name="q2" type="radio" id="q2a1" value="option1">
+            <label class="form-check-label" for="q2a1">875g</label>
+            <input class="form-check-input" name="q2" type="radio" id="q2a2" value="option2">
+            <label class="form-check-label" for="q2a2">900g</label>
+            <input class="form-check-input" name="q2" type="radio" id="q2a3" value="option3">
+            <label class="form-check-label" for="q2a3">1300g</label>
+            <input class="form-check-input" name="q2" type="radio" id="q2a4" value="option3">
+            <label class="form-check-label" for="q2a4">1600g</label>
+        </div>
+        <div id="question3" class="form-check form-check-inline">
+            <span>Which of these champions do not have a sibling?</span>
+        </div>
+        <div id="answers3" class="answers">
+            <input class="form-check-input" name="q3" type="radio" id="q3a1" value="option1">
+            <label class="form-check-label" for="q3a1">Darius</label>
+            <input class="form-check-input" name="q3" type="radio" id="q3a2" value="option2">
+            <label class="form-check-label" for="q3a2">Morgana</label>
+            <input class="form-check-input" name="q3" type="radio" id="q3a3" value="option3">
+            <label class="form-check-label" for="q3a3">Riven</label>
+            <input class="form-check-input" name="q3" type="radio" id="q3a4" value="option3">
+            <label class="form-check-label" for="q3a4">Cassiopeia</label>
+        </div>
+        <div id="question4" class="form-check form-check-inline">
+            <span>Who is not a Yordle?</span>
+        </div>
+        <div id="answers4" class="answers">
+            <input class="form-check-input" name="q4" type="radio" id="q4a1" value="option1">
+            <label class="form-check-label" for="q4a1">Rumble</label>
+            <input class="form-check-input" name="q4" type="radio" id="q4a2" value="option2">
+            <label class="form-check-label" for="q4a2">Annie</label>
+            <input class="form-check-input" name="q4" type="radio" id="q4a3" value="option3">
+            <label class="form-check-label" for="q4a3">Tristana</label>
+            <input class="form-check-input" name="q4" type="radio" id="q4a4" value="option3">
+            <label class="form-check-label" for="q4a4">Teemo</label>
+        </div>
+        <div id="question5" class="form-check form-check-inline">
+            <span>Which of these is Lux's Ultimate Ability?</span>
+        </div>
+        <div id="answers5" class="answers">
+            <input class="form-check-input" name="q5" type="radio" id="q5a1" value="option1">
+            <label class="form-check-label" for="q5a1">Final Spark</label>
+            <input class="form-check-input" name="q5" type="radio" id="q5a2" value="option2">
+            <label class="form-check-label" for="q5a2">Crowstorm</label>
+            <input class="form-check-input" name="q5" type="radio" id="q5a3" value="option3">
+            <label class="form-check-label" for="q5a3">On the Hunt</label>
+            <input class="form-check-input" name="q5" type="radio" id="q5a4" value="option3">
+            <label class="form-check-label" for="q5a4">Pyroclasm</label>
+        </div>
+        <div id="question6" class="form-check form-check-inline">
+            <span>How many champions are there?</span>
+        </div>
+        <div id="answers6" class="answers">
+            <input class="form-check-input" name="q6" type="radio" id="q6a1" value="option1">
+            <label class="form-check-label" for="q6a1">140</label>
+            <input class="form-check-input" name="q6" type="radio" id="q6a2" value="option2">
+            <label class="form-check-label" for="q6a2">141</label>
+            <input class="form-check-input" name="q6" type="radio" id="q6a3" value="option3">
+            <label class="form-check-label" for="q6a3">142</label>
+            <input class="form-check-input" name="q6" type="radio" id="q6a4" value="option3">
+            <label class="form-check-label" for="q6a4">143</label>
+        </div>
+        <div id="question7" class="form-check form-check-inline">
+            <span>Who is from Shurima?</span>
+        </div>
+        <div id="answers7" class="answers">
+            <input class="form-check-input" name="q7" type="radio" id="q7a1" value="option1">
+            <label class="form-check-label" for="q7a1">Ezreal</label>
+            <input class="form-check-input" name="q7" type="radio" id="q7a2" value="option2">
+            <label class="form-check-label" for="q7a2">Caitlyn</label>
+            <input class="form-check-input" name="q7" type="radio" id="q7a3" value="option3">
+            <label class="form-check-label" for="q7a3">Nasus</label>
+            <input class="form-check-input" name="q7" type="radio" id="q7a4" value="option3">
+            <label class="form-check-label" for="q7a4">Swain</label>
+        </div>
+        <div id="question8" class="form-check form-check-inline">
+            <span>Pantheon wanted to be what profession?</span>
+        </div>
+        <div id="answers8" class="answers">
+            <input class="form-check-input" name="q8" type="radio" id="q8a1" value="option1">
+            <label class="form-check-label" for="q8a1">Baker</label>
+            <input class="form-check-input" name="q8" type="radio" id="q8a2" value="option2">
+            <label class="form-check-label" for="q8a2">Sheriff</label>
+            <input class="form-check-input" name="q8" type="radio" id="q8a3" value="option3">
+            <label class="form-check-label" for="q8a3">King</label>
+            <input class="form-check-input" name="q8" type="radio" id="q8a4" value="option3">
+            <label class="form-check-label" for="q8a4">Explorer</label>
+        </div>
+        <button type="button" id="submit" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+    <div id="results">
+        <h2>All Done!</h2>
+        <div id="count" class="result"></div>
+        <div id="correct" class="result"></div>
+        <div id="incorrect" class="result"></div>
+        <div id="unanswered" class="result"></div>
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</html>
